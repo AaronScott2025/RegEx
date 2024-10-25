@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.regex_form.HelloController">
+   <children>
+      <Label layoutX="170.0" layoutY="14.0" prefHeight="74.0" prefWidth="260.0" text="Registration">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFirst" layoutX="106.0" layoutY="140.0"  promptText="First Name" />
+      <TextField fx:id="txtLast" layoutX="106.0" layoutY="170.0"  promptText="Last Name" />
+      <TextField fx:id="txtDOB" layoutX="106.0" layoutY="230.0" promptText="Date Of Birth" />
+      <TextField fx:id="txtEmail" layoutX="106.0" layoutY="200.0" promptText="Email" />
+      <TextField fx:id="txtZip" layoutX="106.0" layoutY="260.0"  promptText="Zip Code" />
+      <Button fx:id="submit" disable="true" layoutX="300.0" layoutY="172.0" mnemonicParsing="false" onAction="#launchScreen" prefHeight="56.0" prefWidth="81.0" text="Submit" />
+      <Label fx:id="lblFirst" layoutX="14.0" layoutY="385.0" prefHeight="17.0" prefWidth="149.0" text="Error: Min(2) Max(25) Char" textFill="RED" visible="false" />
+      <Label fx:id="lblLast" layoutX="14.0" layoutY="408.0" prefHeight="17.0" prefWidth="149.0" text="Error: Min(2) Max(25) Char" textFill="RED" visible="false" />
+      <Label fx:id="lblEmail" layoutX="14.0" layoutY="431.0" prefHeight="17.0" prefWidth="186.0" text="Error: Must use @farmingdale.edu" textFill="RED" visible="false" />
+      <Label fx:id="lblDate" layoutX="14.0" layoutY="456.0" prefHeight="17.0" prefWidth="228.0" text="Error: Must use format: MM/DD/YYYY" textFill="RED" visible="false" />
+      <Label fx:id="lblZip" layoutX="14.0" layoutY="483.0" prefHeight="17.0" prefWidth="196.0" text="Error: Zip code must be 5 digits" textFill="RED" visible="false" />
+      <Label layoutX="89.0" layoutY="285.0" prefHeight="40.0" prefWidth="210.0" text="Press &quot;Enter&quot; To ungrey button">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
